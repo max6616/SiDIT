@@ -1,0 +1,77 @@
+{
+  "source_commit": "208aed9",
+  "source_checkpoint_sha256": "229ad61e69d72697576dc9d964508662b4880a62061b25bdeec30107c0968bcd",
+  "weight_bytes": 194915607,
+  "weight_sha256": "22fceed0e9e303e97ce668cf71b092f39ab9446fe38ec350a4189bc97e389ad7",
+  "tensor_count": 523,
+  "tensor_bytes": 194745348,
+  "all_tensors_exact": true,
+  "weights_only_load_passed": true,
+  "source_proof": [
+    {
+      "file": "model.py",
+      "source_commit": "208aed9",
+      "source_file": "SiDIT/model.py",
+      "source_sha256": "98090eaba4b9670b8e9bc2fc07a2fceb12c0e45b33af7b16a23ae84fb308ec5d",
+      "export_sha256": "8f5c20fd97d3fe355c77cadabafc06a3150c1ecb4c12b3c4c76a83d1ae4be383",
+      "non_import_ast_identical": true
+    },
+    {
+      "file": "dataset.py",
+      "source_commit": "208aed9",
+      "source_file": "SiDIT/dataset.py",
+      "source_sha256": "c1e3bbbcdeef6d07e6a4b154a98644d330d532b5fb7d1ab15e02a55c00818420",
+      "export_sha256": "c1e3bbbcdeef6d07e6a4b154a98644d330d532b5fb7d1ab15e02a55c00818420",
+      "non_import_ast_identical": true
+    },
+    {
+      "file": "vendor_pointcept/utils/structure.py",
+      "source_commit": "208aed9",
+      "source_sha256": "1618ad8116a77c58e65ffa5fab712b6f8f4dd06c149dbf79417c90b979d2ecd5",
+      "export_sha256": "6ffeaea604b2f0c30d8fa7e740f576880bd449b5b740d4dae09ac406a8946a20",
+      "non_import_ast_identical": true
+    },
+    {
+      "file": "vendor_pointcept/utils/misc.py",
+      "source_commit": "208aed9",
+      "source_sha256": "abb01683e69f569921400251686247d2527eecc250ecdb7d073add65bd297b8b",
+      "export_sha256": "abb01683e69f569921400251686247d2527eecc250ecdb7d073add65bd297b8b",
+      "non_import_ast_identical": true
+    },
+    {
+      "file": "vendor_pointcept/utils/serialization/__init__.py",
+      "source_commit": "208aed9",
+      "source_sha256": "e6461b37ccb5dcb24725943271259c4f74dac89d27b22becb97e48ce04c8a9b1",
+      "export_sha256": "e6461b37ccb5dcb24725943271259c4f74dac89d27b22becb97e48ce04c8a9b1",
+      "non_import_ast_identical": true
+    },
+    {
+      "file": "vendor_pointcept/utils/serialization/default.py",
+      "source_commit": "208aed9",
+      "source_sha256": "886b8f3f0bbfaccb96b629fe2021d0bc9a700887c2ff8ec13b347f62ae60d964",
+      "export_sha256": "886b8f3f0bbfaccb96b629fe2021d0bc9a700887c2ff8ec13b347f62ae60d964",
+      "non_import_ast_identical": true
+    },
+    {
+      "file": "vendor_pointcept/utils/serialization/z_order.py",
+      "source_commit": "208aed9",
+      "source_sha256": "8a3b1f516c35e03ca15cb53b10c09b8b9cbe75289ac58650b6489212e9252c21",
+      "export_sha256": "8a3b1f516c35e03ca15cb53b10c09b8b9cbe75289ac58650b6489212e9252c21",
+      "non_import_ast_identical": true
+    },
+    {
+      "file": "vendor_pointcept/utils/serialization/hilbert.py",
+      "source_commit": "208aed9",
+      "source_sha256": "b6c4e6c763d0d1e1583448d0cfe9c1c2ff5600e4535799beed9af80b48179f9e",
+      "export_sha256": "b6c4e6c763d0d1e1583448d0cfe9c1c2ff5600e4535799beed9af80b48179f9e",
+      "non_import_ast_identical": true
+    },
+    {
+      "file": "vendor_pointcept/modules.py",
+      "source_commit": "208aed9",
+      "source_sha256": "c72748335abdf42d8c44b8c0536b75846f916d1e14693c9e4dedd8e6603548d4",
+      "export_sha256": "f21feb17c2e5afa068e242ee09be0e5552b527c8ca2b8ef6981aed991ca9cb97",
+      "non_import_ast_identical_except_unused_PointModel": true
+    }
+  ]
+}

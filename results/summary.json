@@ -1,0 +1,36 @@
+{
+  "main": {
+    "scan_count": 14990,
+    "reflection_count": 129662418,
+    "correct_reflection_count": 114236998,
+    "length_component_mae_A": 0.18855440145814475,
+    "angle_component_mae_deg": 0.5356678417902245,
+    "classification_percent": {
+      "cs": 98.50567044696464,
+      "laue": 98.03202134756505,
+      "pg": 94.84989993328887,
+      "sg": 94.2895263509006
+    },
+    "sg_top3_percent": 99.80653769179453,
+    "length_components_below_0_2_A_percent": 80.69157215921724,
+    "angle_components_below_0_2_deg_percent": 76.05959528574606,
+    "reflection_family_point_weighted_percent": 88.10339939827438
+  },
+  "ood": {
+    "scan_count": 9970,
+    "reflection_count": 55611852,
+    "correct_reflection_count": 42685175,
+    "length_component_mae_A": 0.9566624472827586,
+    "angle_component_mae_deg": 0.649492254993741,
+    "classification_percent": {
+      "cs": 89.11735205616851,
+      "laue": 80.80240722166499,
+      "pg": 66.80040120361083,
+      "sg": 61.213640922768306
+    },
+    "sg_top3_percent": 86.81043129388163,
+    "length_components_below_0_2_A_percent": 47.489134068873284,
+    "angle_components_below_0_2_deg_percent": 67.27850217318623,
+    "reflection_family_point_weighted_percent": 76.75553585232156
+  }
+}

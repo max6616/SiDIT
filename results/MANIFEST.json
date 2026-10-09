@@ -1,0 +1,80 @@
+{
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 2584,
+      "sha256": "68137eacc2e2df0e7851a99cbd3047495da75c0c89a2192326b7af5f682aa36a"
+    },
+    {
+      "file": "main-cell-symmetry.npz",
+      "bytes": 645504,
+      "sha256": "c08b9c3af5acdd330d309f65300e3e2718daed6153c1af68570c3a40668dba3c"
+    },
+    {
+      "file": "main-reflection-counts.jsonl.gz",
+      "bytes": 200155,
+      "sha256": "aa78a9af786b605a6b4a0406579ca5b5f6fa64bbe31abd080e45bb281095a9ba"
+    },
+    {
+      "file": "ood-cell-symmetry.npz",
+      "bytes": 397533,
+      "sha256": "a581b2c30738f2b0328e7e4597cd1c554015f589854e749903ec9bb3f47bfabf"
+    },
+    {
+      "file": "ood-reflection-counts.jsonl.gz",
+      "bytes": 122663,
+      "sha256": "11efdc5d8edb670406fb656d0cb02ec9980a0ebc2ba3071faf5782b199c5624b"
+    },
+    {
+      "file": "perturbations.json",
+      "bytes": 5493,
+      "sha256": "3016fd4cd93e6f68cee102eb5583a3b67d73a138bf1757688d90acea38e60c66"
+    },
+    {
+      "file": "summary.json",
+      "bytes": 1244,
+      "sha256": "00309d532c75ab4516b9eb02b38e018931d087e0132d1e1b77eeea0c080d44ed"
+    }
+  ],
+  "source_artifact_identities": {
+    "main": {
+      "retained_cache_key": "2785454a989ba558936d85ee6ca085c29bca729e",
+      "artifacts": {
+        "pred_abc": "6c51d81a68c3ce455d533347fbf1db8ef59085fc0dafe20eb83093069cd03adb",
+        "true_abc": "cba8a8c6243113e990ad2b1133d93c8388cade3a847b01c1fc49ebf1bc0b3ab9",
+        "pred_ang": "3223c99bcf4dd9434010e7cc9ef3c65014dae41a6265230b39f88961552c8117",
+        "true_ang": "110bab3bdbbfbe5eb045297e4adb86db1bcf1f5db93a5d61cbf7044301f55607",
+        "y_true_sg": "3d1b98d808acc64719aaf59026492635d038e24330f7658929dcb6a1c81755ae",
+        "y_pred_sg": "e5194148c231e4e818052b70ae123f4602ea4749db80377173ce554a68928993",
+        "y_pred_sg_top3": "77e3b006e6c23d2b40e0e2ad23cb7273ce0686a96a40ae93b0fa1d82dd5ef468",
+        "y_true_pg": "c2e27fa73cf5c60f261d06bba50283882b7ca4086eb69db677f172dea1645883",
+        "y_pred_pg": "ced77aab7d6e0948a9e78a15ce09713061109adfbfa53b8b4ff05ca931e6e97b",
+        "y_true_laue": "baac06491607dc197f7d7c5d93c452909202e67656c94d58dae1a501139505a8",
+        "y_pred_laue": "5308ffb02b27301215ec82edc3c7745aa5885c100c1c246bac022ee7d67596e6",
+        "y_true_cs": "36cded834d8c16a62bb0f634a00003e67427cd09de8939dddcc7faf82d725da2",
+        "y_pred_cs": "a98815ac40e04891bfb16077f50f2bdacc68b1c483b9ffe56ea4906fe1e9b87d",
+        "sample_details": "9d7f092b18f3e0ddeceaa3cc0d52394eb05b62bac5e3434c63aab6c92b4d4871"
+      }
+    },
+    "ood": {
+      "retained_cache_key": "8c9d55f3c3666a2b0bd9c6144d5b50d67484d2c7",
+      "artifacts": {
+        "pred_abc": "9b6ab89889764a4af2b2d17bca718ce63f7643039ed3d5b26fe4d61087ea5bea",
+        "true_abc": "38c062950c2e5eefcec45a98f953b2745e187a0121c08f6565a536152df90d98",
+        "pred_ang": "c013b23f27d7411e79aa6c5d549567a7f688bf94d46c0a6fb145cc3c201c5d66",
+        "true_ang": "f410176c6d3d7a6e118e62d41c4853bea74f73b89d6c91dd07462e2171246cfb",
+        "y_true_sg": "9645ec0127226079e91379f227a0f21b8e677e3721b309de2c160f0ec8bebf09",
+        "y_pred_sg": "88654c1e866545cce70bd0f64a6cad83b16a29b5fe73b93d8fa92e21415712c4",
+        "y_pred_sg_top3": "efdd2a6a76b80ae86304eb2c496ae93762a71497960aeb34e562a030e8e6ef01",
+        "y_true_pg": "7c505302576a85e90b0c1cc1844bf28a3dcf9fdcd1250eb7aaed31391686b6ec",
+        "y_pred_pg": "846dfce9c27c3d3c79f48cfaf3855618cad2308ea8e3177a530e72f64b675287",
+        "y_true_laue": "4b283e64dd025e0c1f7e42572294e54008473b667c527128bce4a01c6cdcff1e",
+        "y_pred_laue": "2b6a09e8f625e7cfefa76fa07dbbdf6665af13bdcc8f3be0146b94746ab740ea",
+        "y_true_cs": "8beccd437f536412d2a31f94c2025d27839d7207189337028217d6097f4ae6e1",
+        "y_pred_cs": "f314db94aa2759a39f76c86b9426ca048ba9c49ef3a0a9f0e387e34b41280e35",
+        "sample_details": "389fec4a469187ce17417a9154497dfaf509c69c5024c6c6a420ec325d0fc6e9"
+      }
+    }
+  },
+  "verification": "Exported counts and safe NPZ arrays reproduce the independently reaggregated cohort metrics exactly."
+}

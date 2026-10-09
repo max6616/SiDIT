@@ -1,0 +1,40 @@
+{
+  "model_scale": "base",
+  "in_channels": 5,
+  "min_hkl": -10,
+  "max_hkl": 10,
+  "cls_mode": false,
+  "use_intensity_features": true,
+  "norm_scale": true,
+  "angle_normed": false,
+  "intensity_log1p": true,
+  "grid_size": 0.0001,
+  "grid_sample_mode": "val",
+  "backbone_grid_size": 0.005,
+  "lattice_mean": [
+    7.877615036517837,
+    7.973804705132204,
+    11.096042679373301,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "lattice_std": [
+    3.826939252135594,
+    3.9265665820787645,
+    7.9895312214770895,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "seed": 123,
+  "amp_dtype": "float16",
+  "checkpoint_epoch": 0,
+  "checkpoint_global_step": 80000
+}

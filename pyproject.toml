@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "sidit"
-version = "0.1.0"
+version = "0.1.1"
 description = "Historical SiDIT diffraction point-cloud inference core"
 requires-python = ">=3.10"
 license = {text = "MIT"}

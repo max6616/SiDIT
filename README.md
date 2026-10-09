@@ -20,6 +20,8 @@ The released checkpoint preserves all 523 state tensors from the retained model 
 
 [`results/`](results/) contains compact per-scan reflection counts, aligned cell/symmetry arrays, and the retained perturbation aggregates. Reaggregation gives main-cohort reflection-family accuracy **88.10%**, SG top-1/top-3 **94.29%/99.81%**, and component-wise length/angle MAEs **0.19 Å/0.54°**. The OOD cohort gives **76.76%**, **61.21%/86.81%**, and **0.96 Å/0.65°**, respectively. These are the existing cached predictions, reaggregated with explicit denominators. The result-support README explains the independent file orders and metric definitions.
 
+[`results/INTERPRETATION.md`](results/INTERPRETATION.md) clarifies angularly ordered point thinning, the historical sensitivity-field naming, and the unchanged full-scan intensity descriptor used in those sensitivity evaluations.
+
 ## Tested environment
 
 The exported core was checked in the retained Linux CUDA environment: Python `3.12.11`, PyTorch `2.8.0+cu128`, FlashAttention `2.8.2`, `torch-scatter 2.1.2+pt28cu128`, `spconv-cu124 2.3.8`, `timm 1.0.19`, and `addict 2.4.0`, on an NVIDIA RTX 5090. CUDA extension builds must match the selected PyTorch/CUDA installation. This package does not install or replace those GPU dependencies automatically.

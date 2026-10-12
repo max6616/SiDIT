@@ -1,11 +1,11 @@
-# Retained SiDIT evaluation records
+# SiDIT evaluation records
 
-These compact records support reaggregation of the paper's existing predictions.
-They contain no training inputs, raw experimental measurements, optimizer state,
-or new model-performance run. All scans are simulated.
+These compact records contain benchmark predictions and sensitivity summaries
+for statistical reaggregation. All scans are simulated. Training inputs and raw
+experimental measurements are outside this result support.
 
 Each `*-reflection-counts.jsonl.gz` contains one record per scan, ordered by
-accuracy in the retained cache. SG numbers in `space_group` and `pred_sg` are
+reflection-family accuracy. SG numbers in `space_group` and `pred_sg` are
 zero based: add one for the International Tables number. A filename may occur in
 multiple source roots in the main cohort. The counts, rather than the filename,
 identify each stored observation. Overall HKL is 100 times the sum of correct
@@ -29,12 +29,12 @@ three selected candidates. Group cell MAEs use the aligned true SG arrays.
 The main cohort contains 14,990 scans and 129,662,418 reflections: HKL 88.10%,
 SG top-1/top-3 94.29%/99.81%, length/angle MAE 0.19 A/0.54 deg. The OOD cohort
 contains 9,970 scans: HKL 76.76%, SG 61.21%/86.81%, MAE 0.96 A/0.65 deg.
-Previously reported main HKL 90.47% and angle MAE 0.19 deg corresponded to
-equal-weight space-group means. The paper now consistently uses the full-cohort
-definitions above. Underlying stored predictions have not been changed.
+The reported summaries use the full-cohort metric definitions above. The
+stored prediction arrays and reflection counts are provided for reaggregation.
 
-`perturbations.json` contains retained aggregate sensitivity series. Each series
-uses its own preprocessing pass, so its unperturbed reference is retained as
+`perturbations.json` contains aggregate sensitivity series. Each series
+uses its own preprocessing pass, so its unperturbed reference is provided as
 measured. No per-scan perturbation predictions are reconstructed from aggregates.
-The original scan-input recovery scope is documented separately in the dataset
-card; these cached predictions do not certify that every old raw input was found.
+The [dataset card](https://huggingface.co/datasets/max6616/SiD3M-test/tree/jac-2026-10-12)
+defines the recovered raw-input scope. Prediction records support statistical
+reaggregation separately from raw-input replay.

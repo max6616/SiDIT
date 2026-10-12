@@ -575,14 +575,6 @@ class SiDIT(nn.Module):
         }
 
 SiDIT_CONFIGS = {
-    'small': {
-        'enc_depths': (1, 1, 1, 3, 1),
-        'enc_channels': (16, 32, 64, 128, 256),
-        'enc_num_head': (1, 2, 4, 8, 16),
-        'dec_depths': (1, 1, 1, 1),
-        'dec_channels': (32, 32, 64, 128),
-        'dec_num_head': (2, 2, 4, 8),
-    },
     'base': {
         'enc_depths': (2, 2, 2, 6, 2),
         'enc_channels': (32, 64, 128, 256, 512),
@@ -590,21 +582,5 @@ SiDIT_CONFIGS = {
         'dec_depths': (2, 2, 2, 2),
         'dec_channels': (64, 64, 128, 256),
         'dec_num_head': (4, 4, 8, 16),
-    },
-    'large': {
-        'enc_depths': (3, 3, 3, 6, 2),
-        'enc_channels': (64, 128, 256, 512, 1024),
-        'enc_num_head': (4, 8, 16, 32, 64),
-        'dec_depths': (3, 3, 3, 3),
-        'dec_channels': (128, 128, 256, 512),
-        'dec_num_head': (8, 8, 16, 32),
-    },
-    'huge': {
-        'enc_depths': (4, 4, 4, 12, 4),
-        'enc_channels': (128, 256, 512, 1024, 2048),
-        'enc_num_head': (8, 16, 32, 64, 128),
-        'dec_depths': (3, 3, 3, 3),
-        'dec_channels': (128, 256, 512, 1024),
-        'dec_num_head': (8, 16, 32, 64),
     }
 }

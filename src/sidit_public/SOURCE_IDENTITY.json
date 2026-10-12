@@ -13,8 +13,17 @@
       "source_commit": "208aed9",
       "source_file": "SiDIT/model.py",
       "source_sha256": "98090eaba4b9670b8e9bc2fc07a2fceb12c0e45b33af7b16a23ae84fb308ec5d",
-      "export_sha256": "8f5c20fd97d3fe355c77cadabafc06a3150c1ecb4c12b3c4c76a83d1ae4be383",
-      "non_import_ast_identical": true
+      "export_sha256": "89f4031eb4acede03aaa53e4ce74886420c067a6b8ed77a400df17a8ce5d28a9",
+      "computation_ast_identical_after_base_projection": true,
+      "base_config_identical": true,
+      "published_model_scales": [
+        "base"
+      ],
+      "removed_unpublished_model_scales": [
+        "small",
+        "large",
+        "huge"
+      ]
     },
     {
       "file": "dataset.py",
@@ -73,5 +82,97 @@
       "export_sha256": "f21feb17c2e5afa068e242ee09be0e5552b527c8ca2b8ef6981aed991ca9cb97",
       "non_import_ast_identical_except_unused_PointModel": true
     }
-  ]
+  ],
+  "release_version": "v0.1.2",
+  "published_model_scales": [
+    "base"
+  ],
+  "source_origin": {
+    "original_xrdt_commit": "208aed9318ec2975515204032a86a7b404d3c439",
+    "reference_release": "v0.1.1",
+    "reference_software_commit": "9078e37fe368a6de31288692410cebef80f6037e"
+  },
+  "current_source_files": {
+    "__init__.py": {
+      "bytes": 57,
+      "sha256": "7efe3a3d7cb6403d915ab3f741a880e6dc6c9aaaae743c7f1ec8af765c483fb7"
+    },
+    "config.json": {
+      "bytes": 692,
+      "sha256": "c7c2f7b9f5565dd2ed2481d3cf1c16f8835d22a1598b24b0a762dfd441678cd1"
+    },
+    "dataset.py": {
+      "bytes": 35309,
+      "sha256": "c1e3bbbcdeef6d07e6a4b154a98644d330d532b5fb7d1ab15e02a55c00818420"
+    },
+    "inference.py": {
+      "bytes": 6195,
+      "sha256": "04e31af071186cefc079874037d73da12a1af75748c4fb5140765907a1a0fbb8"
+    },
+    "model.py": {
+      "bytes": 26015,
+      "sha256": "89f4031eb4acede03aaa53e4ce74886420c067a6b8ed77a400df17a8ce5d28a9"
+    },
+    "symmetry.py": {
+      "bytes": 2334,
+      "sha256": "bcfc1b1d0c3c9d012f8b5c77283faf0177bf4346bf56c85b3fc99c6166bb7ff6"
+    },
+    "vendor_pointcept/LICENSE": {
+      "bytes": 1066,
+      "sha256": "33287c1b71d0ce42d2a9d96e4451ef7668362733dc72c11973c3de1181b18153"
+    },
+    "vendor_pointcept/__init__.py": {
+      "bytes": 61,
+      "sha256": "afd7498316e76c80a9c67670c504acd5f102fa9b05ef7a2ede22ce19c36f5ffd"
+    },
+    "vendor_pointcept/modules.py": {
+      "bytes": 3742,
+      "sha256": "f21feb17c2e5afa068e242ee09be0e5552b527c8ca2b8ef6981aed991ca9cb97"
+    },
+    "vendor_pointcept/utils/__init__.py": {
+      "bytes": 43,
+      "sha256": "2c8eb9c656aee598fefcedc0e968a827c58be5ad48e85c443ecfe159d27b66aa"
+    },
+    "vendor_pointcept/utils/misc.py": {
+      "bytes": 932,
+      "sha256": "abb01683e69f569921400251686247d2527eecc250ecdb7d073add65bd297b8b"
+    },
+    "vendor_pointcept/utils/serialization/__init__.py": {
+      "bytes": 129,
+      "sha256": "e6461b37ccb5dcb24725943271259c4f74dac89d27b22becb97e48ce04c8a9b1"
+    },
+    "vendor_pointcept/utils/serialization/default.py": {
+      "bytes": 2006,
+      "sha256": "886b8f3f0bbfaccb96b629fe2021d0bc9a700887c2ff8ec13b347f62ae60d964"
+    },
+    "vendor_pointcept/utils/serialization/hilbert.py": {
+      "bytes": 9964,
+      "sha256": "b6c4e6c763d0d1e1583448d0cfe9c1c2ff5600e4535799beed9af80b48179f9e"
+    },
+    "vendor_pointcept/utils/serialization/z_order.py": {
+      "bytes": 4135,
+      "sha256": "8a3b1f516c35e03ca15cb53b10c09b8b9cbe75289ac58650b6489212e9252c21"
+    },
+    "vendor_pointcept/utils/structure.py": {
+      "bytes": 8872,
+      "sha256": "6ffeaea604b2f0c30d8fa7e740f576880bd449b5b740d4dae09ac406a8946a20"
+    }
+  },
+  "static_selection_proof": {
+    "base_configuration_identical": true,
+    "model_computation_ast_identical_after_base_projection": true,
+    "removed_unpublished_presets": [
+      "small",
+      "large",
+      "huge"
+    ],
+    "inference_computation_unchanged_except_explicit_base_guard": true
+  },
+  "tensor_preservation_proof": {
+    "basis": "Existing tensor-only file and complete per-tensor manifest identities, linked to the original full comparison.",
+    "prior_public_identity_sha256": "956dd1d1c68c09fe795dc4fd62436c2af658e132f211712df5207963a509c238",
+    "per_tensor_manifest_sha256": "f49a55af6119e2594c4bdd52af4def5efd3171ecdb5608c7a3c9b0efd207d82f",
+    "new_model_construction_or_tensor_comparison": false,
+    "new_forward_or_benchmark_run": false
+  }
 }

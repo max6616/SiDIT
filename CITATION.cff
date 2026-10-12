@@ -1,8 +1,8 @@
 cff-version: 1.2.0
-message: "Please cite this software when using the historical SiDIT inference core."
+message: "Please cite this software when using the SiDIT inference core."
 title: "SiDIT: joint reflection-family and crystal-property prediction from diffraction point clouds"
-version: 0.1.1
-date-released: 2026-10-09
+version: 0.1.2
+date-released: 2026-10-12
 url: "https://github.com/max6616/SiDIT"
 license: MIT
 authors:

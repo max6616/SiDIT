@@ -2,8 +2,8 @@
   "files": [
     {
       "file": "README.md",
-      "bytes": 2584,
-      "sha256": "68137eacc2e2df0e7851a99cbd3047495da75c0c89a2192326b7af5f682aa36a"
+      "bytes": 2543,
+      "sha256": "f2b0493200044ccfee40e856e80a6ddebaafc1503e2e2b0753742c73649b64c1"
     },
     {
       "file": "main-cell-symmetry.npz",

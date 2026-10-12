@@ -23,7 +23,7 @@ def load_config():
 
 
 def prepare_scan(path, config=None):
-    """Use the archived loader with all augmentation disabled and deterministic voxel sampling."""
+    """Load a test scan with augmentation disabled and deterministic voxel sampling."""
     config = config or load_config()
     path = Path(path).resolve()
     dataset = MillerDataset(
@@ -45,18 +45,20 @@ def prepare_scan(path, config=None):
 
 def load_model(weights, device='cuda', config=None):
     config = config or load_config()
+    if config.get('model_scale') != 'base':
+        raise ValueError("This static SiDIT release supports only model_scale='base'.")
     if device == 'cuda' and not torch.cuda.is_available():
         raise RuntimeError('SiDIT sparse/FlashAttention inference requires the configured CUDA environment.')
     model = SiDIT(in_channels=5, num_classes=config['max_hkl'] - config['min_hkl'] + 1,
                   cls_mode=False, use_intensity_features=True,
-                  **SiDIT_CONFIGS[config['model_scale']]).to(device)
+                  **SiDIT_CONFIGS['base']).to(device)
     state = torch.load(weights, map_location='cpu', weights_only=True)
     model.load_state_dict(state, strict=True)
     return model.eval()
 
 
 def decode_cell(normalized, config=None):
-    """Decode the archived length plus cosine/sine head in float32, as in the evaluator."""
+    """Decode the length plus cosine/sine head in float32, as in the evaluator."""
     config = config or load_config()
     normalized = normalized.float()
     mean = normalized.new_tensor(config['lattice_mean'])
